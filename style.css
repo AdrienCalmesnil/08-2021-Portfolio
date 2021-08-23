@@ -341,6 +341,16 @@ footer {
   /* transform: scale(1.05); */
 }
 
+.projects .carousel .card #marius{
+  cursor: pointer;
+  color: #6c5cf4;
+  transition: all 0.3s ease;
+}
+
+.projects .carousel .card:hover #marius{
+  color: #fff;
+}
+
 .projects .carousel .card .box {
   display: flex;
   flex-direction: column;

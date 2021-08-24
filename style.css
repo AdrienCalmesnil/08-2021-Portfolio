@@ -272,7 +272,7 @@ footer {
 .services,
 .projects {
   color: #fff;
-  background: #111;
+  background: #111; 
 }
 
 .services .title::before,
@@ -327,6 +327,7 @@ footer {
 /* projects section styling */
 .projects .title::after {
   content: "More is coming";
+  color: #6c5cf4;
 }
 
 .projects .carousel .card {
@@ -396,7 +397,7 @@ footer {
   margin: 0 5px;
   outline: none !important;
   border-radius: 50%;
-  border: 2px solid #6c5cf4 !important;
+  border: 2px solid #6c5cf4!important;
   transition: all 0.3s ease;
 }
 

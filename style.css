@@ -204,7 +204,6 @@ section .title::after {
 /* about section styling */
 
 .about,
-.services,
 .projects,
 .contact,
 footer {
@@ -212,7 +211,6 @@ footer {
 }
 
 .about .about-content,
-.services .serv-content,
 .contact .contact-content {
   display: flex;
   flex-wrap: wrap;
@@ -242,7 +240,6 @@ footer {
 }
 
 .about .about-content .right span {
-  /* color: ##ff1100; */
   font-weight: bold;
 }
 
@@ -268,66 +265,20 @@ footer {
   background: none;
 }
 
-/* services section styling */
-.services,
+/* project section styling */
 .projects {
   color: #fff;
-  background: #111; 
+  background: #111;
 }
 
-.services .title::before,
 .projects .title::before {
   background: #fff;
 }
 
-.services .title::after,
-.projects .title::after {
-  background: #111;
-  content: "What I provide";
-}
-
-.services .serv-content .card {
-  width: calc(33% - 20px);
-  background: #222;
-  text-align: center;
-  border-radius: 6px;
-  padding: 20px 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.services .serv-content .card:hover {
-  background: #6c5cf4;
-}
-
-.services .serv-content .card .box {
-  transition: all 0.3s ease;
-}
-
-.services .serv-content .card:hover .box {
-  transform: scale(1.05);
-}
-
-.services .serv-content .card i {
-  font-size: 50px;
-  color: #6c5cf4;
-  transition: color 0.3s ease;
-}
-
-.services .serv-content .card:hover i {
-  color: #fff;
-}
-
-.services .serv-content .card .text {
-  font-size: 25px;
-  font-weight: 500;
-  margin: 10px 0 7px 0;
-}
-
-/* projects section styling */
 .projects .title::after {
   content: "More is coming";
   color: #6c5cf4;
+  background: #111;
 }
 
 .projects .carousel .card {
@@ -340,16 +291,15 @@ footer {
 
 .projects .carousel .card:hover {
   background: #6c5cf4;
-  /* transform: scale(1.05); */
 }
 
-.projects .carousel .card #marius{
+.projects .carousel .card #marius {
   cursor: pointer;
   color: #6c5cf4;
   transition: all 0.3s ease;
 }
 
-.projects .carousel .card:hover #marius{
+.projects .carousel .card:hover #marius {
   color: #fff;
 }
 
@@ -383,7 +333,6 @@ footer {
 .projects .carousel .card:hover img {
   border-color: #fff;
   border-radius: 10%;
-
 }
 
 .owl-dots {
@@ -397,7 +346,7 @@ footer {
   margin: 0 5px;
   outline: none !important;
   border-radius: 50%;
-  border: 2px solid #6c5cf4!important;
+  border: 2px solid #6c5cf4 !important;
   transition: all 0.3s ease;
 }
 
@@ -521,18 +470,18 @@ footer {
   background: none;
 }
 
-#location{
+#location {
   cursor: pointer;
   color: #000;
 }
 
-.links{
+.links {
   text-align: center;
   display: flex;
-  justify-content: space-evenly
+  justify-content: space-evenly;
 }
 
-.links li{
+.links li {
   list-style: none;
   display: inline-block;
   justify-content: space-between;
@@ -541,21 +490,21 @@ footer {
   transition: all 0.3s ease;
 }
 
-.links li a{
+.links li a {
   display: block;
   color: #6c5cf4;
   font-size: 25px;
   font-weight: 600;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   transition: all 0.3s ease;
 }
 
-.links li a:hover{
+.links li a:hover {
   animation: zoom 1000ms;
   transform: scale(1.05);
 }
 
-.links li a::after{
+.links li a::after {
   content: "";
   display: block;
   width: 100%;
@@ -565,23 +514,9 @@ footer {
   transition: all 0.3s ease;
 }
 
-.links li a:hover::after{
+.links li a:hover::after {
   transform: scale(0);
-} 
-
-/* @keyframes zoom{
-  0%{
-  }25%{
-    transform: translateX(-15px);
-    opacity: 0;
-  }50%{
-    transform: translateX(+15px);
-  }100%{
-    transform: translateX(0);
-  }
-} */
-
-
+}
 
 /* footer section styling */
 footer {
@@ -701,7 +636,7 @@ footer span a:hover {
     margin-bottom: 35px;
   }
 
-  .links li a{
+  .links li a {
     font-size: 23px;
   }
 }
@@ -727,7 +662,7 @@ footer span a:hover {
     width: 100%;
   }
 
-  .links li a{
+  .links li a {
     font-size: 20px;
   }
 }
@@ -742,17 +677,17 @@ footer span a:hover {
   }
 }
 
-@media (max-width: 375px){
+@media (max-width: 375px) {
   .projects .title::after {
     content: "More is coming";
     font-size: 18px;
   }
 
-  .links li{
+  .links li {
     margin: 60px 0 0 0;
   }
 
-  .links li a{
+  .links li a {
     font-size: 16px;
   }
 }
